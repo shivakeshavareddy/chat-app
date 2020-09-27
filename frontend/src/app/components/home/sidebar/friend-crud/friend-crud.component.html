@@ -1,0 +1,8 @@
+<form [formGroup]="addFriendForm">
+        <input type="text" class="friendName" formControlName="friendName"
+        [class.is-invalid]=" friendName.touched && friendName.invalid " #friendName />
+        <button (click) ="addFriend()" [disabled]="addFriendForm.invalid" >Add Friend</button>
+</form>
+
+<small *ngIf="addFriendForm.get('friendName').hasError('shouldNotHaveSpaces')" class="text-danger" > user name cant have spaces</small>
+    

@@ -1,0 +1,23 @@
+
+  <form [formGroup]="loginForm">
+    <!-- <div class="floating"
+style="height: 50px; width: 50px; background: rgb(200,200,200);">
+</div> -->
+    <input type="text" class="userName" formControlName="userName" name="userName" placeholder="User Name"
+      id="userName" />
+    <input type="text" class="password"
+      [ngClass]="{ 'is-invalid': loginForm.get('password').touched && loginForm.get('password').invalid }"
+      formControlName="password" placeholder="password" name="password" id="password" />
+
+    <div class="buttonwrap">
+      <button calss="login" (click)="handleLogin()">
+        login
+      </button>
+      <button class="register" [routerLink]="['/register']">
+        register
+      </button>
+    </div>
+
+  
+
+</form>

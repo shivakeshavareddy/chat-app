@@ -1,0 +1,15 @@
+
+chat messages format of saving
+sorting 
+storing
+###########################
+#reg form input validations
+
+login input validations 
+
+add friend validations
+
+log out button
+
+
+

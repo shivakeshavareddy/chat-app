@@ -1,0 +1,28 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    align-content: space-around;
+    
+ }
+ input{
+     border: none;
+     border-bottom: 1px grey solid;
+     width: 50%;
+ }
+ button{
+     background-color: #fff;
+     width: 100%;
+     border-radius: 8px;
+     margin: 0;
+     margin-top:0.8rem;
+     width: 50%;
+ }
+ .buttonwrap{
+     margin: 0;
+     margin-top: 1.2rem;
+     width: 50%;
+ }
+ 

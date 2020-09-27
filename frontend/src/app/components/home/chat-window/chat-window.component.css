@@ -1,0 +1,32 @@
+  strong {
+    color: black;
+    padding-left: 10px;
+  }
+  input{
+    border-radius: 5px;
+    width: 100%;
+  }
+  .overall{
+    display: grid;
+    position: relative;
+    height: 100vh;
+    grid-template-rows: auto 2rem;
+    background: rgb(205, 234, 245);
+   
+    /* grid-template-rows: 70vh 20vh; */
+  }
+
+  .chatBody{
+    overflow-y: scroll;
+    grid-row: 1;
+    scrollbar-color: #1e1e24,#6649b8;
+    scrollbar-width: 0.24rem;
+
+  }
+ 
+
+  .textbody{
+    grid-row: 2;
+    align-self: end;
+  }
+ 

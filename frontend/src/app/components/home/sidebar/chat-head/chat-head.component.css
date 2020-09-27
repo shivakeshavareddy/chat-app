@@ -1,0 +1,7 @@
+.box {
+    padding-left: 40%;
+    border: 5px #bbe6e7 solid;
+    border-radius: 5px;
+    background-color: rgb(145, 200, 236);
+    flex-direction: row;
+}

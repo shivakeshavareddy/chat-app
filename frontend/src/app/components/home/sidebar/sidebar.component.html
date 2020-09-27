@@ -1,0 +1,9 @@
+<div class="overall">
+    
+        <app-friend-crud></app-friend-crud>
+    
+    <div  *ngFor="let Friend of friendList" >
+        <app-chat-head [userFriend] = Friend ></app-chat-head>
+    </div>
+    
+</div>

@@ -1,0 +1,25 @@
+<form [formGroup]="registerForm">
+    <input type="text" placeholder="User Name"  name="name" id="name" [ngClass]="{
+            'is-invalid':
+              registerForm.get('name').touched &&
+              registerForm.get('name').invalid
+          }" formControlName="name" />
+
+    <input type="email" placeholder="email" name="email" id="email" [ngClass]="{
+            'is-invalid':
+              registerForm.get('email').touched &&
+              registerForm.get('email').invalid
+          }" formControlName="email" />
+    <input placeholder="password" type="password" name="password" id="password" [ngClass]="{
+            'is-invalid':
+              registerForm.get('password').touched &&
+              registerForm.get('password').invalid
+          }" formControlName="password" />
+
+    <button (click)="handleSubmit()" [routerLink]="['/login']">
+        Register
+    </button>
+    <button [routerLink]="['/login']" >
+        Back to Login
+    </button>
+</form>

@@ -1,0 +1,14 @@
+
+<div class="overall">
+  <div  class="chatBody">
+      <div id = "chat" class="msg" *ngFor="let msg of msgList">
+        <strong>{{msg.from}}</strong>
+        <p>{{ msg.msg }}</p>
+      </div>
+    </div>
+    <div class="textbody">
+      <form (submit)="handleSubmit(inputText)">
+          <input type="text" placeholder="Type Here..." #inputText>
+      </form>  
+    </div>
+</div>
